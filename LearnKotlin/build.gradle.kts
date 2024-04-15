@@ -1,12 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-buildscript {
-    ext {
-        compose_version = "1.1.1"
-    }
-}
-
 plugins {
-alias(libs.plugins.androidApplication) apply false
+    alias(libs.plugins.androidApplication) apply false
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
 }
-
