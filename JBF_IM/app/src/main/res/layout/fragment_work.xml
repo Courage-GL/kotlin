@@ -7,11 +7,18 @@
     android:orientation="vertical"
     tools:context=".activity.MainActivity">
 
-    <TextView
-        android:gravity="center"
-        android:text="工作"
-        android:textSize="50sp"
+    <com.zhzc0x.banner.BannerView
+        android:id="@+id/banner_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="260dp"
+        app:autoplay="true"
+        app:loopPlay="true"
+        app:displayTextBackground="#4D000000"
+        app:displayTextColor="@color/white"
+        app:displayTextGravity="left"
+        app:displayTextSize="16sp"
+        app:displayTextStyle="bold"
+        app:indicatorGravity="bottom|right"
+        app:isNumberIndicator="false" />
 
 </LinearLayout>

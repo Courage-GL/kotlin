@@ -73,5 +73,12 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.banner.android.v110)
+    implementation (libs.glide)
+    // 网络请求框架：https://github.com/getActivity/EasyHttp
+    implementation ("com.github.getActivity:EasyHttp:12.8")
+    // OkHttp 框架：https://github.com/square/okhttp
+    // noinspection GradleDependency
+    implementation ("com.squareup.okhttp3:okhttp:3.12.13")
 
 }
