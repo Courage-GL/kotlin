@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <RadioButton
+            android:id="@+id/message_rb"
+            style="@style/radiobutton"
+            android:drawableTop="@drawable/selector_msg_rb"
+            android:text="消息" />
+
+        <RadioButton
+            android:id="@+id/contacts_rb"
+            style="@style/radiobutton"
+            android:drawableTop="@drawable/selector_contacts_rb"
+            android:text="联系人" />
+
+        <RadioButton
+            android:id="@+id/work_rb"
+            style="@style/radiobutton"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_work_rb"
+            android:text="工作" />
+
+
+        <RadioButton
+            android:id="@+id/mine_rb"
+            style="@style/radiobutton"
+            android:drawableTop="@drawable/selector_mine_rb"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>
